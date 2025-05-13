@@ -57,6 +57,7 @@
         <p class="location__text">
           Provocare: În ce an a fost înființată Universitatea Transilvania?
         </p>
+        <button class="location__answer" data-challenge-button="">Vezi răspunsul</button>
         <div class="location__image">
           <img src="./img/locations/livada-postei.jpg" alt="">
         </div>
@@ -74,6 +75,7 @@
         <p class="location__text">
           Provocare: Descoperă vechiul nume al Brașovului și simbolul său ilustrat pe muzeul din centrul pieței!
         </p>
+        <button class="location__answer" data-challenge-button="">Vezi răspunsul</button>
         <div class="location__image">
           <img src="./img/locations/piata-sfatului.jpg" alt="">
         </div>
@@ -91,6 +93,7 @@
         <p class="location__text">
           Provocare: Caută și citește povestea despre motivul pentru care biserica este numită Neagră (Neagra)?
         </p>
+        <button class="location__answer" data-challenge-button="">Vezi răspunsul</button>
         <div class="location__image">
           <img src="./img/locations/biserica-neagra.jpg" alt="">
         </div>
@@ -108,6 +111,7 @@
         <p class="location__text">
           Provocare: De ce se numesc Porțile Ecaterina?
         </p>
+        <button class="location__answer" data-challenge-button="">Vezi răspunsul</button>
         <div class="location__image">
           <img src="./img/locations/poarta-ecaterina.jpg" alt="">
         </div>
@@ -125,6 +129,7 @@
         <p class="location__text">
           Provocare: Care a fost scopul acestui bastion?
         </p>
+        <button class="location__answer" data-challenge-button="">Vezi răspunsul</button>
         <div class="location__image">
           <img src="./img/locations/bastion-tesatorilor.jpg" alt="">
         </div>
@@ -142,6 +147,7 @@
         <p class="location__text">
           Provocare: Care este numele bisericii din apropiere?
         </p>
+        <button class="location__answer" data-challenge-button="">Vezi răspunsul</button>
         <div class="location__image">
           <img src="./img/locations/prima-scoala-romaneasca.jpg" alt="">
         </div>
@@ -162,6 +168,7 @@
         <p class="location__text">
           Indiciu: Mergi la Pietre lui Solomon cu autobuzul 50.
         </p>
+        <button class="location__answer" data-challenge-button="">Vezi răspunsul</button>
         <div class="location__image">
           <img src="./img/locations/piata-unirii.jpg" alt="">
         </div>
@@ -179,6 +186,7 @@
         <p class="location__text">
           Provocare: Găsește o legendă despre Regele Solomon!
         </p>
+        <button class="location__answer" data-challenge-button="">Vezi răspunsul</button>
         <div class="location__image">
           <img src="./img/locations/pietre-solomon.jpg" alt="">
         </div>
@@ -211,6 +219,50 @@
       </div>
     </footer>
   </div>
+
+  <div id="modal" class="modal">
+    <div id="modal-background" class="modal__background">
+      <div id="modal-content" class="modal__content">
+        <div class="modal__header">
+          <div class="modal__title">Răspuns</div>
+          <div id="modal-close" class="modal__close">&times;</div>
+        </div>
+        <div class="modal__body">
+          <div id="modal-message" class="modal__message"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: none;">
+    <div data-challenge-answer="">
+      Universitatea Transilvania a fost fondată în 1948
+    </div>
+    <div data-challenge-answer="">
+      Vechiul nume al Brașovului este Kronstadt, iar simbolul orașului este Coroana cu Rădăcini de copac
+    </div>
+    <div data-challenge-answer="">
+      După incendiul din biserică din 1689, zidurile bisericii au devenit negre și astfel a primit acest nume
+    </div>
+    <div data-challenge-answer="">
+      Porțile poartă numele Ecaterina după Mănăstirea Sf. Ecaterina care a existat acolo înainte.
+    </div>
+    <div data-challenge-answer="">
+      Lățimea zidurilor este de 4 metri!
+    </div>
+    <div data-challenge-answer="">
+      Se numește Biserica Sf. Nicolae
+    </div>
+    <div data-challenge-answer="">
+      Numele inițial este „Piața Prundului”, care se referă la pârâul ce venea aici de la Pietrele lui Solomon!
+    </div>
+    <div data-challenge-answer="">
+      Regele Solomon călărea un cal, iar soldații care voiau să-l prindă îl urmăreau. Fără altă opțiune, Regele Solomon
+      a încercat să sară de pe o stâncă pe alta. Astfel a reușit să scape.
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
 </body>
 
 </html>

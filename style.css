@@ -24,6 +24,12 @@ body {
   background-color: var(--primary-500);
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
+
+  scrollbar-gutter: stable;
+  scroll-behavior: smooth;
+}
+body.fixed {
+  overflow: hidden;
 }
 
 /* null */
@@ -148,6 +154,20 @@ a {
   margin-top: 20px;
   max-width: 90%;
 }
+.location__answer {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+
+  background-color: var(--primary-400);
+  color: var(--primary-100);
+  
+  outline: none;
+  border: none;
+
+  font-size: 18px;
+  cursor: pointer;
+}
 .location__image {
   border-radius: 10px;
   overflow: hidden;
@@ -203,6 +223,64 @@ a {
   font-weight: 500;
   color: var(--primary-100);
   line-height: 1.2;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  transition: 0.5s;
+  transform: translateY(-150%);
+}
+.modal.opened {
+  transform: translateY(0px);
+}
+.modal__background {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  padding: 20px;
+}
+.modal__content {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px 20px 20px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.modal__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal__title {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--primary-100);
+}
+.modal__close {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--primary-100);
+  padding: 10px;
+  cursor: pointer;
+}
+.modal__body {
+  padding: 10px 0px;
+}
+.modal__message {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--primary-100);
 }
 
 @media (width <= 370px) {
