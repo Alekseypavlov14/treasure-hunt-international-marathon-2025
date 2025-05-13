@@ -209,6 +209,27 @@ a {
   padding-bottom: 2px;
 }
 
+.answers {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.answers__title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary-100);
+}
+.answers__list {
+  list-style-position: inside;
+}
+.answers__item {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--primary-100);
+  padding: 5px 0px;
+}
+
 .footer {
   padding: 30px 0px;
   margin-top: 20px;
