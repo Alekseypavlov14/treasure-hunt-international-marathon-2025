@@ -247,6 +247,7 @@ a {
   align-items: center;
   justify-content: center;  
   padding: 20px;
+  padding-bottom: 5%;
 }
 .modal__content {
   width: 100%;
